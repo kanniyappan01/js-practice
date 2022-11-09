@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>js map method</title>
+	</head>
+	<body>
+		<script>
+		
+			/*
+			// map
+			
+			var number=[1,2,3,4,5];
+			console.log(number);
+			var result = number.map(function(value){
+				return value*2
+			})
+			console.log(result);
+			
+			*/
+			
+			var person =[
+			{id:1, first_name:"Arun", last_name:"Kumar"},
+			{id:1, first_name:"Kishor", last_name:"Kumar"},
+			{id:1, first_name:"Tharun", last_name:"dass"},
+			]
+			
+			/*
+			var result = person.map(function(value){
+				return value.first_name + value.last_name;
+			})
+			*/
+			
+			var result = person.map(function(value){
+				return[value.first_name, value.last_name].join("")
+			})
+			console.log(result);
+		</script>
+	</body>
+</html>
