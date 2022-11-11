@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+<html>
+    <head>
+		<meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>js method</title>
+	</head>
+	<body>
+		<script>
+	/*
+		var dailyRoutine=["wake up", "eat", "sleep"];
+		
+		//for-of
+		
+		for(var routine of dailyRoutine){
+			console.log(routine);
+		}
+		for(var routine of dailyRoutine){
+			console.log([routine]);
+		}
+		
+		// for-in
+		
+		for(var routine in dailyRoutine){
+			console.log(routine)
+		}
+		
+		for(var routine in dailyRoutine){
+			console.log(routine,dailyRoutine[routine])
+		}
+	*/
+		
+		// forEach
+		
+		var dailyRoutine=["wake up", "eat", "sleap"];
+		
+		dailyRoutine.forEach(function(routine){
+			console.log(routine);
+		})
+		
+		dailyRoutine.forEach(function(routine, routineIndex){
+			console.log(routineIndex);
+		})
+		
+		dailyRoutine.forEach(function(routine, routineIndex){
+			console.log(routineIndex,routine)
+		})
+		</script>
+	</body>
+</html>
